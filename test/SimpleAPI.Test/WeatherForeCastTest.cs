@@ -14,7 +14,7 @@ namespace SimpleAPI.Test
         [Fact]
         public void GetCountryNameFrance()
         {
-           var okResult = controller.Get(5) as OkObjectResult;
+           var okResult = controller.Get(6) as OkObjectResult;
            var country = okResult.Value;
             Assert.Equal("France", country);
         }
